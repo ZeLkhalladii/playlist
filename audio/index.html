@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Play Liste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Music</a>
+        <a href="image/index.html">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </div>
+    <img src="looogo.png" style="width: 10%;position: relative;bottom: 48px;">
+    <div class="input">
+        <input id="data" type="text">
+        <button onclick="add()">Add Music</button>
+        <button onclick="pop()">Pop Music</button>
+    </div>
+
+    <div class="arrows">
+        <i onclick="prev()" class="fa fa-chevron-left" style="font-size:36px"></i>
+        <audio controls>
+       <source src="audio\1.mp3"></audio>
+       
+        <i onclick="next()" class="fa fa-chevron-right" style="font-size:36px"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

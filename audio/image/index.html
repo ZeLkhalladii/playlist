@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery Play Liste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" >Music</a>
+        <a href="#news" class="active">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </div>
+    <img src="looogo.png" style="width: 10%;position: relative;bottom: 48px;">
+    <div class="input">
+        <input id="data" type="text">
+        <button onclick="add()">Add Image</button>
+        <button onclick="pop()">Pop Image</button>
+    </div>
+
+    <div class="arrows">
+        <i onclick="prev()" class="fa fa-chevron-left" style="font-size:36px"></i>
+        <img id="img" src="https://placehold.it/800x500" alt="">
+        <i onclick="next()" class="fa fa-chevron-right" style="font-size:36px"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
